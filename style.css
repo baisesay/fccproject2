@@ -1,0 +1,176 @@
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: sans-serif;
+    background: #ccc;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background: #fff;
+    border-bottom: #e8491e 2px solid;
+}
+
+h1 {
+    margin-top: 120px;
+}
+
+#header-img {
+    max-width: 150px;
+    margin: auto;
+    display: block;
+}
+
+#logo {
+    height: 100px;
+    line-height: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+#nav-bar {
+    height: 100px;
+    line-height: 100px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+li {
+    list-style: none;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+}
+
+.nav-link:hover {
+    color: #e8491e;
+}
+
+#email {
+    padding: 5px;
+    width: 250px;
+    font-size: 18px;
+}
+
+#submit {
+    padding: 5px;
+    margin-top: 10px;
+    width: 150px;
+    border: 0;
+    background: #e8491e;
+    color: #fff;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+#submit:hover {
+    background: yellow;
+    color: green;
+}
+
+#video {
+    margin-top: 20px;
+}
+
+#features {
+    max-width: 600px;
+    margin: auto;
+    text-align: left;
+    padding: 20px;
+}
+
+#features h3 {
+    margin-bottom: -10px;
+}
+
+#pricing {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    column-gap: 30px;
+    overflow: hidden;
+    width: 70%;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.card-detail img {
+    max-width: 50%;
+}
+
+.card-detail {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    padding: 10px;
+    margin-top: 50px;
+    min-height: 200px;
+    align-items: center;
+    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+    transform: 0.5s ease;
+    cursor: pointer;
+}
+
+.card-detail p {
+    font-size: 18px;
+}
+
+.card-detail h4 {
+    font-size: 20px;
+}
+
+.card-detail:hover {
+    transform: scale(1.1);
+}
+
+span {
+    font-size: 2rem;
+}
+
+#footer {
+    background: #fff;
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+@media(max-width:768px) {
+    #header {
+        display: grid;
+        grid-template-columns: 1fr;
+        background: #fff;
+        height: 200px;
+    }
+    #nav-bar {
+        line-height: 30px;
+    }
+    ul {
+        display: block;
+        text-align: center;
+    }
+    h1 {
+        margin-top: 200px;
+        font-size: 20px;
+        padding: 10px;
+    }
+    #video {
+        max-width: 300px;
+    }
+    .card-detail:hover {
+        transform: none;
+    }
+}
